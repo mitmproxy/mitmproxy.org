@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cshape -o website src rendered

@@ -1,0 +1,10 @@
+MANIFEST
+/build
+/dist
+/tmp
+/doc
+/venv
+*.py[cdo]
+*.swp
+*.swo
+rendered

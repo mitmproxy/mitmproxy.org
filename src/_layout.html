@@ -1,0 +1,28 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="@!urlTo("/index.html")!@">mitmproxy</a>
+      <div class="nav">
+        <ul class="nav">
+          <li $!'class="active"' if this.under("/index.html") else ""!$> <a href="@!top!@/index.html">home</a> </li>
+          <li $!'class="active"' if this.under("/doc") else ""!$><a href="@!top!@/doc/index.html">docs</a></li>
+          <li $!'class="active"' if this.under("/about.html") else ""!$><a href="@!top!@/about.html">about</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+   $!body!$
+
+  <footer>
+    <hr>
+    <p>Copyright 2013 Aldo Cortesi</p>
+  </footer>
+</div>

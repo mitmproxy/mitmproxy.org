@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rsync --delete -aP rendered/ mitmproxy.org:/var/www/mitmproxy.org
+
