@@ -25,7 +25,7 @@ The new header will be added to all responses passing through the proxy.
 
 ## Events
 
-### start(ScriptContext)
+### start(ScriptContext, argv)
 
 Called once on startup, before any other events.
 
@@ -35,6 +35,11 @@ Called once on startup, before any other events.
 Called when a client initiates a connection to the proxy. Note that
 a connection can correspond to multiple HTTP requests.
 
+
+### serverconnect(ScriptContext, ServerConnection)
+
+Called when the proxy initiates a connection to the target server. Note that
+a connection can correspond to multiple HTTP requests.
 
 ### request(ScriptContext, Flow)
 
@@ -122,6 +127,13 @@ using pydoc (which is installed with Python by default), like this:
 > pydoc libmproxy.flow.Request
 </pre>
 
+
+## Running scripts in parallel
+
+We have a single flow primitive, so when a script is handling something, other requests block.
+While that's a very desirable behaviour under some circumstances, scripts can be run threaded by using the <code>libmproxy.script.concurrent</code> decorator.
+
+$!example("examples/nonblocking.py")!$
 
 ## Running scripts on saved flows
 
