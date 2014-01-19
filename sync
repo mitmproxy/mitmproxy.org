@@ -3,4 +3,4 @@
 rm -rf src/doc
 cp -r ~/mitmproxy/mitmproxy/doc-src src/doc
 rm src/doc/01-bootstrap.min.css
-cp  ~/mitmproxy/mitmproxy/dist/*.gz src/download
+#cp  ~/mitmproxy/mitmproxy/dist/*.gz src/download

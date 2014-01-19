@@ -5,7 +5,6 @@ import countershape.template
 sys.path.insert(0, "..")
 from libmproxy import filt, version
 
-print os.environ
 MITMPROXY_SRC = os.environ.get("MITMPROXY_SRC", os.path.abspath(".."))
 ns.VERSION = version.VERSION
 
