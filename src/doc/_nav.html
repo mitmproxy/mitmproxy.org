@@ -2,6 +2,7 @@
     $!nav(idxpath, this, state)!$
     $!nav("install.html", this, state)!$
     $!nav("howmitmproxy.html", this, state)!$
+    $!nav("modes.html", this, state)!$
 
     <li class="nav-header">Tools</li>
         $!nav("mitmproxy.html", this, state)!$
@@ -9,16 +10,22 @@
 
     <li class="nav-header">Features</li>
         $!nav("anticache.html", this, state)!$
-        $!nav("clientreplay.html", this, state)!$
+
         $!nav("filters.html", this, state)!$
-        $!nav("forwardproxy.html", this, state)!$
-        $!nav("proxyauth.html", this, state)!$
         $!nav("replacements.html", this, state)!$
+        $!nav("clientreplay.html", this, state)!$
         $!nav("serverreplay.html", this, state)!$
         $!nav("setheaders.html", this, state)!$
-        $!nav("sticky.html", this, state)!$
+        $!nav("passthrough.html", this, state)!$
+        $!nav("proxyauth.html", this, state)!$
         $!nav("reverseproxy.html", this, state)!$
+        $!nav("responsestreaming.html", this, state)!$
+        $!nav("socksproxy.html", this, state)!$
+        $!nav("sticky.html", this, state)!$
+        $!nav("tcpproxy.html", this, state)!$
+        $!nav("upstreamproxy.html", this, state)!$
         $!nav("upstreamcerts.html", this, state)!$
+
 
     <li class="nav-header">Installing Certificates</li>
         $!nav("ssl.html", this, state)!$
@@ -46,5 +53,6 @@
         $!nav("tutorials/transparent-dhcp.html", this, state)!$
 
     <li class="nav-header">Hacking</li>
+        $!nav("dev/architecture.html", this, state)!$
         $!nav("dev/testing.html", this, state)!$
 </ul>

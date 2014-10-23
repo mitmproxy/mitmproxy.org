@@ -1,13 +1,13 @@
 
-In reverse proxy mode, mitmproxy accepts standard HTTP requests and forwards
-them to the specified upstream server. This is in contrast to
-<a href="@!urlTo("upstreamproxy.html")!@">upstream proxy mode</a>, in which
-mitmproxy forwards HTTP proxy requests to an upstream proxy server.
+In this mode, mitmproxy accepts proxy requests and unconditionally forwards all
+requests to a specified upstream proxy server. This is in contrast to <a
+href="@!urlTo("reverseproxy.html")!@">reverse proxy mode</a>, in which
+mitmproxy forwards ordinary HTTP requests to an upstream server.
 
 <table class="table">
     <tbody>
         <tr>
-            <th width="20%">command-line</th> <td>-R <i>schema</i>://hostname[:port]</td>
+            <th width="20%">command-line</th> <td>-U http://hostname[:port]</td>
         </tr>
     </tbody>
 </table>
@@ -23,6 +23,5 @@ And you can indicate that mitmproxy should use HTTPS while the upstream
 service uses HTTP like this:
 
 	https2http://hostname:port
-
 
 
