@@ -4,10 +4,13 @@ import datetime
 import countershape
 from countershape import Page, Directory, markup, model
 import countershape.template
-sys.path.insert(0, "..")
+
+MITMPROXY_SRC = os.path.abspath(
+    os.path.expanduser(os.environ.get("MITMPROXY_SRC", ".."))
+)
+sys.path.insert(0, MITMPROXY_SRC)
 from libmproxy import filt, version
 
-MITMPROXY_SRC = os.environ.get("MITMPROXY_SRC", os.path.abspath(".."))
 ns.VERSION = version.VERSION
 
 if ns.options.website:
@@ -40,29 +43,7 @@ def example(s):
 ns.example = example
 
 
-filt_help = []
-for i in filt.filt_unary:
-    filt_help.append(
-        ("~%s"%i.code, i.help)
-    )
-for i in filt.filt_rex:
-    filt_help.append(
-        ("~%s regex"%i.code, i.help)
-    )
-for i in filt.filt_int:
-    filt_help.append(
-        ("~%s int"%i.code, i.help)
-    )
-filt_help.sort()
-filt_help.extend(
-    [
-        ("!", "unary not"),
-        ("&", "and"),
-        ("|", "or"),
-        ("(...)", "grouping"),
-    ]
-)
-ns.filt_help = filt_help
+ns.filt_help = filt.help
 
 
 def nav(page, current, state):
@@ -79,10 +60,12 @@ ns.navbar = countershape.template.File(None, "_nav.html")
 pages = [
     Page("index.html", "Introduction"),
     Page("install.html", "Installation"),
-    Page("mitmproxy.html", "mitmproxy"),
-    Page("mitmdump.html", "mitmdump"),
     Page("howmitmproxy.html", "How mitmproxy works"),
     Page("modes.html", "Modes of Operation"),
+
+    Page("mitmproxy.html", "mitmproxy"),
+    Page("mitmdump.html", "mitmdump"),
+    Page("config.html", "configuration"),
 
     Page("ssl.html", "Overview"),
     Directory("certinstall"),

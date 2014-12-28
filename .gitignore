@@ -4,6 +4,7 @@ MANIFEST
 /tmp
 /doc
 /venv
+src/download
 *.py[cdo]
 *.swp
 *.swo

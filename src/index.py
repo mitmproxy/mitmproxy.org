@@ -1,7 +1,17 @@
+import sys
 import countershape.layout
 import countershape.model
 import countershape.markup
 from countershape.doc import *
+
+MITMPROXY_SRC = os.path.abspath(
+    os.path.expanduser(os.environ.get("MITMPROXY_SRC", ".."))
+)
+sys.path.insert(0, MITMPROXY_SRC)
+from libmproxy import version
+
+ns.VERSION = version.VERSION
+
 this.titlePrefix = "mitmproxy - "
 
 this.markup = countershape.markup.Markdown()

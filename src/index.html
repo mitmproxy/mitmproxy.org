@@ -52,7 +52,14 @@
                 <h2>source</h2>
 
                 <ul>
-                    <li>Current release: <a href="@!urlTo("mitmproxy-0.11.tar.gz")!@">mitmproxy 0.11</a></li>
+                    <li>Current release - <b>@!VERSION!@:</b><br/>
+                        <a href="@!urlTo("mitmproxy-" + VERSION + ".tar.gz")!@">
+                            mitmproxy
+                        </a> <br/>
+                        <a href="@!urlTo("netlib-" + VERSION + ".tar.gz")!@">
+                            netlib
+                        </a> 
+                    </li>
 
                     <li>GitHub: <a href="https://github.com/mitmproxy/mitmproxy">github.com/mitmproxy/mitmproxy</a></li>
                 </li>
@@ -65,8 +72,16 @@
 
                  <table>
                     <tr>
-                        <td><a href="@!urlTo("osx-mitmproxy-0.11.tar.gz")!@"><img width="60" src="images/apple.png"/></a></td>
-                        <td><a href="@!urlTo("osx-mitmproxy-0.11.tar.gz")!@">OSX Mountain Lion</a></td>
+                        <td>
+                            <a href="@!urlTo("osx-mitmproxy-" + VERSION + ".tar.gz")!@">
+                                <img width="60" src="images/apple.png"/>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="@!urlTo("osx-mitmproxy-" + VERSION + ".tar.gz")!@">
+                                OSX (Mountain Lion and later)
+                            </a>
+                        </td>
                     </tr>
                  </table>
 
@@ -146,6 +161,17 @@
 
             </div>
 
+            <div>
+                <h2>
+                    <a href="https://github.com/secretsquirrel/BDFProxy">
+                        bdfproxy
+                    </a>
+                </h2>
+
+                <p>BackDoorFactory + mitmproxy - patch binaries with shell
+                code on the fly.  </p>
+            </div>
+
 
         </div>
         <div class="span4 talks">
@@ -182,11 +208,28 @@
             <div>Robin Müller <a href="http://www.sba-research.org/pubs/reevaluating_smartphone_app_security.pdf">Re-evaluating Smartphone
             Messaging Application Security</a></div>
 
+            <div>Pierre-Eric Marchandet <a href="http://pem-musing.blogspot.fr/2014/12/debugging-server-side-rest-calls-with.html">Debugging server side REST calls with mitmproxy in Meteor</a></div>
+
+            <div>attify <a href="http://blog.attify.com/2014/12/26/quizup-ios-app-security-vulnerability-win-quiz/">WIN any quiz : QuizUp iOS App Security Vulnerability</a></div>
+
+            <div>Shubhro Saha <a href="http://www.shubhro.com/2014/12/18/reverse-engineering-kayak-mitmproxy/">Reverse-engineering the Kayak app with mitmproxy</a></div>
+
+
+
+
         </div>
         <div class="span4">
             <h2> chatter </h2>
 
-                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mitmproxy/favorites" data-widget-id="525136772666118144">Tweets about mitmproxy</a>
+                <a 
+                    class="twitter-timeline" 
+                    data-dnt="true" 
+                    href="https://twitter.com/mitmproxy/favorites" 
+                    data-widget-id="525136772666118144"
+                    height="800"
+                >
+                        Tweets about mitmproxy
+                    </a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
            
         </div>
