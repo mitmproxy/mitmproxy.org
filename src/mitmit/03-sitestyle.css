@@ -1,0 +1,33 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.masthead {
+    text-align: center;
+    border-bottom: 0;
+}
+
+.masthead .row {
+}
+
+.frontpage .talks div {
+	margin-bottom: 10px;
+}
+
+
+.frontpage h1 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.frontpage h2 {
+	font-size: 22px;
+	margin: 0px;
+}
+.frontpage .page-header {
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
