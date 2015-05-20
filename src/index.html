@@ -1,12 +1,14 @@
-<div class="masthead">
-    <div class="container">
-        <a href="@!top!@/images/mitmproxy.png" title="mitmproxy">
-            <img width="50%" src="@!top!@/images/mitmproxy-small.png" border="0">
-        </a>
+<div class="masthead container">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="@!top!@/images/mitmproxy.png" title="mitmproxy">
+                <img width="50%" src="@!top!@/images/mitmproxy-small.png" border="0">
+            </a>
+        </div>
     </div>
 
     <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
 
             <h2><a href="@!urlTo('doc/mitmproxy.html')!@">mitmproxy</a></h2>
 
@@ -14,7 +16,7 @@
 
         </div>
 
-        <div class="span4">
+        <div class="col-md-4">
             <h2><a href="@!urlTo('doc/mitmdump.html')!@">mitmdump</a></h2>
 
             <p>Think tcpdump for HTTP - the same functionality as mitmproxy
@@ -22,7 +24,7 @@
 
         </div>
 
-        <div class="span4">
+        <div class="col-md-4">
             <h2><a href="@!urlTo('doc/scripting/libmproxy.html')!@">libmproxy</a></h2>
 
             <p>A library for implementing powerful interception proxies.</p>
@@ -34,10 +36,10 @@
 
 <hr/>
 
-<div class="frontpage">
+<div class="frontpage container">
     <section>
     <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
             <div>
                 <h2>install</h2>
 
@@ -47,7 +49,7 @@
 
             </div>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
             <div>
                 <h2>source</h2>
 
@@ -58,14 +60,14 @@
                         </a> <br/>
                         <a href="@!urlTo("netlib-" + VERSION + ".tar.gz")!@">
                             netlib
-                        </a> 
+                        </a>
                     </li>
 
                     <li>GitHub: <a href="https://github.com/mitmproxy/mitmproxy">github.com/mitmproxy/mitmproxy</a></li>
                 </li>
             </div>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
             <div>
                 <h2>binaries</h2>
 
@@ -89,20 +91,20 @@
         </div>
     </div>
     </section>
-    
+
     <hr/>
 
     <section>
     <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
             <div>
                 <h2>irc</h2>
 
-                <b>#mitmproxy</b> on <a href="http://www.oftc.net/">OFTC</a><br/> 
+                <b>#mitmproxy</b> on <a href="http://www.oftc.net/">OFTC</a><br/>
                 (irc://irc.oftc.net:6667).
             </div>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
             <h2>mailing list</h2>
                 <table class="googlegroups">
                     <tr>
@@ -120,7 +122,7 @@
                     </tr>
                 </table>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
             <h2>bug tracker</h2>
 
             <p>Please report bugs on the <a href="https://github.com/mitmproxy/mitmproxy/issues?state=open">Github issue tracker.</a></p>
@@ -133,10 +135,10 @@
 
     <section>
     <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
             <h2> related projects </h2>
             <div>
-                <h2><a href="http://pathod.net">pathod</a></h2>
+                <h3><a href="http://pathod.net">pathod</a></h3>
 
                 <p>A pathological web daemon, and a perverse HTTP client.  Started
                 to provide better testing for mitmproxy, it has now taken on an
@@ -145,7 +147,7 @@
             </div>
 
             <div>
-                <h2><a href="http://netograph.com">netograph</a></h2>
+                <h3><a href="http://netograph.com">netograph</a></h3>
 
                 <p> A privacy analysis project, built using the <a
                 href="@!urlTo('doc/scripting/libmproxy.html')!@">libmproxy</a> library.
@@ -154,7 +156,7 @@
             </div>
 
             <div>
-                <h2><a href="https://dutzi.github.io/tamper/">tamper</a></h2>
+                <h3><a href="https://dutzi.github.io/tamper/">tamper</a></h3>
 
                 <p>A mitmproxy based devtools extension that lets you edit
                 remote files locally and serve them directly to Chrome.  </p>
@@ -162,11 +164,11 @@
             </div>
 
             <div>
-                <h2>
+                <h3>
                     <a href="https://github.com/secretsquirrel/BDFProxy">
                         bdfproxy
                     </a>
-                </h2>
+                </h3>
 
                 <p>BackDoorFactory + mitmproxy - patch binaries with shell
                 code on the fly.  </p>
@@ -174,13 +176,13 @@
 
 
         </div>
-        <div class="span4 talks">
+        <div class="col-md-4 talks">
             <h2> talks & writings </h2>
 
             <div>Aldo Cortesi <a href="http://corte.si/posts/security/skout/index.html">Skout: a devastating privacy vulnerability</a></div>
 
             <div>Aldo Cortesi <a href="http://corte.si/posts/security/udid-must-die/index.html">Why the Apple UDID had to die</a></div>
-           
+
             <div>Aldo Cortesi <a href="http://corte.si/posts/security/apple-udid-survey/index.html">How UDIDs are used: a survey</a></div>
 
             <div>Aldo Cortesi <a href="http://corte.si/posts/security/openfeint-udid-deanonymization/index.html">De-anonymizing Apple UDIDs with OpenFeint</a></div>
@@ -190,13 +192,13 @@
             <div>Arun Thampi, <a href="http://mclov.in/2012/02/08/path-uploads-your-entire-address-book-to-their-servers.html">Path uploads your entire iPhone address book to its servers</a></div>
 
             <div>Jeremy Singer-Vine and Jennifer Valentino-DeVries, WSJ, <a href="http://blogs.wsj.com/digits/2012/12/07/sites-sharing-personal-details-the-journal-methodology/">Sites Sharing Personal Details: The Journal’s Tests</a></div>
-            
+
             <div>Jim Cheetham <a href="https://www.youtube.com/watch?v=kQ1-0G90lQg">mitmproxy - use and abuse of a hackable SSL-capable man-in-the-middle proxy</a></div>
-            
+
             <div>Christian Weiske <a href="http://cweiske.de/tagebuch/ouya-is-watching.htm">OUYA is watching you</a></div>
-            
+
             <div>Peter B Marks <a href="http://blog.marxy.org/2013/08/reverse-engineering-network-traffic.html">Reverse engineering network traffic with a Raspberri Pi</a></div>
-            
+
             <div>Mark L. Chang <a href="http://blog.markchang.net/post/17244167951/hipster-uploads-part-of-your-iphone-address-book-to-its">Hipster uploads part of your iPhone address book to its servers</a></div>
 
             <div>Drew Davidson, Matt Fredrikson, Somesh Jha <a href="http://davidson-www.cs.wisc.edu/baa/blog.php?storyid=19">mitmproxy: the Attack Tool Keeping Devs Honest</a></div>
@@ -220,20 +222,20 @@
 
 
         </div>
-        <div class="span4">
+        <div class="col-md-4">
             <h2> chatter </h2>
 
-                <a 
-                    class="twitter-timeline" 
-                    data-dnt="true" 
-                    href="https://twitter.com/mitmproxy/favorites" 
+                <a
+                    class="twitter-timeline"
+                    data-dnt="true"
+                    href="https://twitter.com/mitmproxy/favorites"
                     data-widget-id="525136772666118144"
                     height="800"
                 >
                         Tweets about mitmproxy
                     </a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-           
+
         </div>
 
     </div>
