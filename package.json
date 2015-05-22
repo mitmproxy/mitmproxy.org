@@ -1,0 +1,19 @@
+{
+  "name": "www.mitmproxy.org",
+  "private": true,
+  "dependencies": {
+    "bootstrap": ">=3.3.4"
+  },
+  "devDependencies": {
+    "gulp": "",
+    "gulp-less": "",
+    "gulp-minify-css": "",
+    "gulp-notify": "",
+    "gulp-plumber": "",
+    "gulp-rev": "",
+    "gulp-sourcemaps": "",
+    "gulp-util": "",
+    "lodash": "",
+    "map-stream": ""
+  }
+}

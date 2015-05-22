@@ -9,3 +9,4 @@ src/download
 *.swp
 *.swo
 rendered
+node_modules

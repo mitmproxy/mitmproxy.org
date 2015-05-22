@@ -1,0 +1,1 @@
+{"version":3,"sources":["02-app.less"],"names":[],"mappings":"AACA;EACI,kBAAA;EACA,gBAAA;;AAGJ,UAAW,OAAO;EACjB,mBAAA","file":"02-app.css","sourcesContent":["\n.masthead {\n    text-align: center;\n    border-bottom: 0;\n}\n\n.frontpage .talks div {\n\tmargin-bottom: 10px;\n}\n"],"sourceRoot":"/static"}
