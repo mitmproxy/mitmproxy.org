@@ -1,8 +1,9 @@
 #!/bin/sh
 
 rm -rf src/doc
+cp src/0*.css ../mitmproxy/doc-src
 cp -r ../mitmproxy/doc-src src/doc
-rm src/doc/01-vendor*
+rm src/doc/0*.css*
 rm src/doc/mitmproxy-long.png
 cp ./src/_doclayout.html ./src/doc/_layout.html
 
