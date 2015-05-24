@@ -15,7 +15,7 @@ ns.VERSION = version.VERSION
 this.titlePrefix = "mitmproxy - "
 
 this.markup = countershape.markup.Markdown()
-this.layout = countershape.Layout("_layout.html")
+this.layout = countershape.layout.FileLayout("_layout.html")
 ns.ga = file("_ga.html").read()
 ns.menu = countershape.widgets.PageIndex(
                 [
@@ -34,4 +34,3 @@ pages = [
     Directory("doc"),
     Page("about.html", "about"),
 ]
-
