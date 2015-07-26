@@ -9,8 +9,10 @@ MITMPROXY_SRC = os.path.abspath(
 )
 sys.path.insert(0, MITMPROXY_SRC)
 from libmproxy import version
+from netlib import version as netlibversion
 
 ns.VERSION = version.VERSION
+ns.NETLIB_VERSION = netlibversion.VERSION
 
 this.titlePrefix = "mitmproxy - "
 
