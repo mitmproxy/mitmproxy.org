@@ -22,7 +22,6 @@ ns.ga = file("_ga.html").read()
 ns.menu = countershape.widgets.PageIndex(
                 [
                     '/index.html',
-                    '/doc/index.html',
                     '/about.html',
                 ],
                 depth=1,
@@ -33,6 +32,5 @@ ns.menu = countershape.widgets.PageIndex(
 
 pages = [
     Page("index.html", "home"),
-    Directory("doc"),
     Page("about.html", "about"),
 ]
