@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>@!pageTitle!@</title>
-        $!header!$
+        <title>mitmproxy - about</title>
+        
+
+
+<link  href="01-vendor-d3ed69e6.css" type="text/css" rel="StyleSheet"/>
+<link  href="02-app-092c3704.css" type="text/css" rel="StyleSheet"/>
+<script src="01-jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="02-bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="navbar navbar-default navbar-static-top">
@@ -18,23 +24,49 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="@!urlTo("/index.html")!@">
-                        <img height="20px" src="@!urlTo("mitmproxy-long.png")!@"/>
+                    <a class="navbar-brand" href="index.html">
+                        <img height="20px" src="mitmproxy-long.png"/>
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li $!'class="active"' if this.under("/index.html") else ""!$> <a href="@!top!@/index.html">home</a> </li>
+                        <li > <a href="./index.html">home</a> </li>
                         <li><a href="http://docs.mitmproxy.org">docs</a></li>
-                        <li $!'class="active"' if this.under("/about.html") else ""!$><a href="@!top!@/about.html">about</a></li>
+                        <li class="active"><a href="./about.html">about</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
-           $!body!$
+           <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>About</h1>
+            <div>
+
+                <p>mitmproxy is developed by the mitmproxy dev team, with
+                significant <a
+                href="https://github.com/cortesi/mitmproxy/raw/master/CONTRIBUTORS">contributions</a>
+                from the mitmproxy community.</p>
+
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="https://twitter.com/cortesi">@cortesi</a>:
+                        <a href="http://corte.si">Aldo Cortesi</a>, project founder</li>
+                    <li><a href="https://twitter.com/maximilianhils">@maximilianhils</a>:
+                        <a href="https://maximilianhils.com">Maximilian Hils</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
         </div>
 
 

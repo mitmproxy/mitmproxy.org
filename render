@@ -1,5 +1,0 @@
-#!/bin/sh
-
-echo "Rendering with info from mitmproxy repo - make sure it's the latest release"
-env MITMPROXY_SRC=~/mitmproxy/mitmproxy \
-	cshape $* -o website src rendered

@@ -1,3 +1,0 @@
-#!/bin/sh
-
-rsync --delete -aP rendered/ aldo@mitmproxy.org:/var/www/mitmproxy.org
