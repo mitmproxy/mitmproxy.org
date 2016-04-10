@@ -1,11 +1,11 @@
 <svg 
   xmlns="http://www.w3.org/2000/svg" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
-  height="160px"
-  viewBox="0 0 1200 240"
+  width="1450" height="240"
+  viewBox="0 0 1450 240"
 >
   <use xlink:href="logo.svg#logo" transform="translate(120,120)"/>
   <text x="270" y="180" font-family="Vox" font-size="160" fill="white">
-    mitmproxy
+    mitmproxy docs
   </text>
 </svg>
