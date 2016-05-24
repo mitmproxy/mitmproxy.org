@@ -1,3 +1,4 @@
 #!/bin/sh
 
-rsync --delete -aP rendered/ aldo@mitmproxy.org:/var/www/mitmproxy.org
+aws --profile mitmproxy \
+    s3 sync --acl public-read ./rendered s3://www.mitmproxy.org/
