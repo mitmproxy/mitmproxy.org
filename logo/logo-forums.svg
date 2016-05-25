@@ -1,0 +1,11 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1620" height="240"
+  viewBox="0 0 1620 240"
+>
+  <use xlink:href="logo-inverted.svg#logo" transform="translate(120,120)"/>
+  <text id="foo" x="270" y="180" font-family="Vox" font-size="160" fill="black">
+    mitmproxy forums
+  </text>
+</svg>
