@@ -1,0 +1,19 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="300" height="340"
+  viewBox="0 0 300 340"
+>
+  
+  <!-- http://www.mathopenref.com/coordpolycalc.html, 0, 0, 6, 150, 30 -->
+  <polygon points="
+130,-75,0,-150
+0,-150,-130,-75
+-130,-75,-130,75
+-130,75,0,150
+0,150,130,75
+130,75,130,-75
+  	" transform="translate(150,170)" fill="#222" stroke="#F7941E" stroke-width="15" stroke-linejoin="miter"></polygon>
+  	<use xlink:href="logo.svg#logo" transform="translate(150,140) scale(0.6)"/>
+  <text x="150" y="240" font-family="Vox" font-weight="700" text-anchor="middle" font-size="40" fill="white">mitmproxy</text>
+</svg>

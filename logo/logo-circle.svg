@@ -1,0 +1,18 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  height="512" width="512"
+  viewBox="-120 -120 240 240"
+>
+ <!-- 
+ ImageMagick: 
+ convert -background transparent favicon.svg -define icon:auto-resize -colors 256 favicon.ico
+
+ SVG rendering is somewhat broken in ImageMagick.
+ One needs to prefx all xlink:href attributes in logo.svg with "logo.svg" before converting.
+  -->
+  <rect x="-120" y="-120"
+        width="240" height="240"
+        rx="120" ry="120"/>
+  <use xlink:href="logo.svg#logo"/>
+</svg>
