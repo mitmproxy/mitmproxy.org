@@ -4,11 +4,7 @@ import countershape.model
 import countershape.markup
 from countershape.doc import *
 
-MITMPROXY_SRC = os.path.abspath(
-    os.path.expanduser(os.environ.get("MITMPROXY_SRC", ".."))
-)
-sys.path.insert(0, MITMPROXY_SRC)
-from mitmproxy import version
+from netlib import version
 
 ns.VERSION = version.VERSION
 
