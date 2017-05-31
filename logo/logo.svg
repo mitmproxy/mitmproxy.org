@@ -5,13 +5,15 @@
   height="240px"
   viewBox="-120 -120 240 240"
 >
-  <!-- ImageMagick bug workaround: All use xlink:href references are prefixed with "logo.svg" -->
   <defs>
-    <g id="logo-litte-circle">
-      <circle r="6" fill="#F7941E"/>
-      <circle r="10" stroke="white" fill="none" stroke-width="3.2"/>
-    </g>
-    <g id="logo-connection">
+    <!-- this could all be abbreviated (see git history), but support for advanced SVG is often abysmal -->
+    <g id="logo">
+      <!-- middle -->
+      <circle r="14" fill="#F15A29"/>
+      <circle r="19.5" stroke="#F7941E" stroke-width="4" fill="none"/>
+      <circle r="30" stroke="white" stroke-width="10" fill="none" />
+
+      <!-- left side -->
       <path
       stroke="white"
       fill="none"
@@ -24,18 +26,29 @@
       M -100,0
       L -30, 0
       " />
-      <use xlink:href="logo.svg#logo-litte-circle" transform="translate(58,29)"/>
-      <use xlink:href="logo.svg#logo-litte-circle" transform="translate(-73,65)"/>
-    </g>
-    <g id="logo">
-      <circle r="14" fill="#F15A29"/>
-      <circle r="19.5" stroke="#F7941E" stroke-width="4" fill="none"/>
-      <circle r="30" stroke="white" stroke-width="10" fill="none" />
+      <circle cx="58" cy="29" r="6" fill="#F7941E"/>
+      <circle cx="58" cy="29" r="10" stroke="white" fill="none" stroke-width="3.2"/>
+      <circle cx="73" cy="-65" r="6" fill="#F7941E"/>
+      <circle cx="73" cy="-65" r="10" stroke="white" fill="none" stroke-width="3.2"/>
 
-      <use xlink:href="logo.svg#logo-connection" />
-      <use xlink:href="logo.svg#logo-connection" transform="rotate(180)"/>
+      <!-- right side, just invert numbers -->
+      <path
+      stroke="white"
+      fill="none"
+      stroke-width="10"
+      d="
+      M -67, 72
+      A 100,100 0 0,0 94,-33
+      L 56,-33
+      A 65,65 0 0,0 -55,-37
+      M 100,0
+      L 30, 0
+      " />
+      <circle cx="-58" cy="-29" r="6" fill="#F7941E"/>
+      <circle cx="-58" cy="-29" r="10" stroke="white" fill="none" stroke-width="3.2"/>
+      <circle cx="-73" cy="65" r="6" fill="#F7941E"/>
+      <circle cx="-73" cy="65" r="10" stroke="white" fill="none" stroke-width="3.2"/>
     </g>
   </defs>
-
   <use xlink:href="#logo" />
 </svg>

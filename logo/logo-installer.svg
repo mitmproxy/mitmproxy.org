@@ -1,0 +1,18 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="163" height="314"
+  viewBox="0 0 163 314"
+>
+  <rect x="0" y="0" width="163" height="314" fill="#333"></rect>
+  <use xlink:href="logo.svg#logo" transform="translate(81,81) scale(0.5)"/>
+  
+  <text x="81" y="180" font-family="Vox" font-size="27" fill="white" text-anchor="middle" >
+    mitmproxy
+  </text>
+  <!--
+  <text x="7" y="215" font-family="Vox" font-size="30" fill="white" >
+    setup
+  </text>
+	-->
+</svg>
